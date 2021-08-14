@@ -1,9 +1,9 @@
 .screen-header {
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: var(--initial-margin);
 }
 
 .screen-header__title {
@@ -11,6 +11,6 @@
   font-weight: 600;
 }
 
-.screen-header__icon span {
+.screen-header__icons span {
   margin-left: 30px;
 }
