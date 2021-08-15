@@ -22,13 +22,13 @@
   width: 22px;
   height: 22px;
   border-radius: 11px;
-  position: absolute;
-  left: 20px;
-  bottom: 18px;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: 500;
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
 }
 
 .nav__btn__new {

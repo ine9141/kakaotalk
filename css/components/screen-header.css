@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--initial-margin);
+  position: relative;
 }
 
 .screen-header__title {
@@ -13,4 +14,33 @@
 
 .screen-header__icons span {
   margin-left: 30px;
+}
+
+.cog__new {
+  display: flex;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.recommended-friends{
+  color: rgba(0,0,0,0.3);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.recommended-friends h6{
+  padding: 15px 0px;
+}
+
+.recommended-friends span{
+  display: block;
+  padding: 100px 0px;
+  text-align: center;
+  font-size: 18px;
 }
