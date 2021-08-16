@@ -1,21 +1,119 @@
-.find-icons{
-    display:flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding: 30px 0px;
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 0px;
 }
 
-.find-icons__icon > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width:100px;
-    text-align: center;
-    font-weight: 600;
+.find-icons__icon > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
 }
 
-.find-icons__icon > div > i{
-    margin-bottom: 10px;
-    font-size: 35px;
+.find-icons__icon > div > i {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.open-chat__header__title {
+  opacity: 0.5;
+}
+
+.open-chat__header__text {
+  opacity: 0.3;
+}
+
+.open-chat__content {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.open-chat__contents {
+  position: relative;
+}
+
+.open-chat__contents span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.open-chat__contents__header {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.open-chat__contents__text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.open-chat__contents__member .divider {
+  display: flex;
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px;
+}
+
+.open-chat__contents__member {
+  display: flex;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-chat__contents__member span {
+  margin-left: 5px;
+}
+
+.open-chat__contents__member img {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.open-chat__contents__status {
+  color: rgb(255, 124, 211);
+}
+
+.open-chat__contents > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-chat__contents__heart {
+  display: flex;
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.open-chat__contents__heart i {
+  margin-right: 5px;
 }
