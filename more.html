@@ -28,14 +28,57 @@
         <h1 class="screen-header__title">Find</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
             <span><i class="fas fa-cog fa-lg"></i>
                 <div class="cog__new"></div>
             </span>
         </div>
     </header>
 
-    <main>
+    <main class="more-main">
+
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar-xl" src="screenshots\profile.jpg" />
+
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Ine</h4>
+                    <h6 class="user-component__subtitle">+82 010-1234-5678</h6>
+                </div>
+            </div>
+            <div class="user-component__info">
+                <div class="user-component__new-chat">
+                    <span><i class="far fa-comment-alt fa-2x"></i><span>
+                </div>
+            </div>
+        </div>
+
         <div class="find-icons">
+            <div class="find-icons__icon">
+                <div>
+                    <i class="far fa-calendar"></i>
+                    <span>Calendar</span>
+                </div>
+            </div>
+            <div class="find-icons__icon">
+                <div>
+                    <i class="far fa-smile-beam"></i>
+                    <span>Emoticons</span>
+                </div>
+            </div>
+            <div class="find-icons__icon">
+                <div>
+                    <i class="fas fa-paint-roller"></i>
+                    <span>Themes</span>
+                </div>
+            </div>
+            <div class="find-icons__icon">
+                <div>
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>Account</span>
+                </div>
+            </div>
+
             <div class="find-icons__icon">
                 <div>
                     <i class="fas fa-qrcode"></i>
@@ -47,73 +90,28 @@
                     <span>Add by Contacts</span>
                 </div>
             </div>
-            <div class="find-icons__icon">
-                <div>
-                    <i class="fas fa-fingerprint"></i>
-                    <span>Add by ID</span>
-                </div>
-            </div>
-            <div class="find-icons__icon">
+
+            <!--<div class="find-icons__icon">
                 <div>
                     <i class="far fa-envelope"></i>
                     <span>Invite</span>
                 </div>
-            </div>
+            </div>-->
         </div>
 
-        <div class="recommended-friends">
-            <h6>Recommended Friends</h6>
-            <span>You have no recommended friends.</span>
-        </div>
-
-        <div class="open-chat">
-            <div class="open-chat__header">
-                <h5 class="open-chat__header__title">Open Chat</h5>
-                <div class="open-chat__header__text">
-                    <span>Go to Openchat Home</span>
-                    <i class="fas fa-chevron-right fa-xl"></i>
-                </div>
-            </div>
-            <div class="open-chat__content">
-
-                <div class="open-chat__contents">
-                    <span class="open-chat__contents__header">#IMAGINE_DRAGONS</span>
-                    <span class="open-chat__contents__text">#believer#awesome#songs</span>
-                    <div class="open-chat__contents__member">
-                        <img src="screenshots\openchat_profile1.jpg" />
-                        <span>802 members</span>
-                        <div class="divider"></div>
-                        <span class="open-chat__contents__status">Active</span>
+        <div class="suggestions">
+            <h6>Suggestions</h6>
+            <div class="suggestions-icon find-icons">
+                <div class="find-icons__icon">
+                    <div>
+                        <i class="far fa-envelope"></i>
+                        <span>envelope</span>
                     </div>
                 </div>
-
-                <div class="open-chat__contents">
-                    <img src="screenshots\openchat_album1.jpg" /> 
-                    <div class="open-chat__contents__heart">
-                        <i class="fas fa-heart"></i>
-                        <span>326</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="open-chat__content">
-
-                <div class="open-chat__contents">
-                    <span class="open-chat__contents__header">#CHUNG_HA</span>
-                    <span class="open-chat__contents__text">#cute#lovely#songs</span>
-                    <div class="open-chat__contents__member">
-                        <img src="screenshots\openchat_profile2.jpg" />
-                        <span>299 members</span>
-                        <div class="divider"></div>
-                        <span class="open-chat__contents__status">Active</span>
-                    </div>
-                </div>
-
-                <div class="open-chat__contents">
-                    <img src="screenshots\openchat_album2.jpg" /> 
-                    <div class="open-chat__contents__heart">
-                        <i class="fas fa-heart"></i>
-                        <span>215</span>
+                <div class="find-icons__icon">
+                    <div>
+                        <i class="fas fa-fingerprint"></i>
+                        <span>Add by ID</span>
                     </div>
                 </div>
             </div>
