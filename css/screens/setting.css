@@ -1,0 +1,29 @@
+.setting-main{
+    margin: 0px 20px;
+}
+
+.setting-menu{
+    margin-top: 50px;
+}
+
+.setting-divider{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.setting-menu-components{
+    display: flex;
+    justify-content:space-between;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.setting-menu-components span:last-child{
+    margin-left: auto;
+}
+
+.setting-menu-components > div:nth-child(3) > span{
+    opacity: 0.5;
+}
