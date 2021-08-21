@@ -1,31 +1,32 @@
-.fa-comment-alt{
-    color: #2e363e;
+.more-main {
+  margin-top: 93px;
 }
 
-.more-icon{
-    display:flex;
+.fa-comment-alt {
+  color: #2e363e;
 }
 
-.more-icon__icon{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.more-icon {
+  display: flex;
 }
 
-.suggestions{
-    margin: 20px 0px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #2e363e;
-
-
+.more-icon__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.suggestions i{
-    display: grid;
-
+.suggestions {
+  margin: 20px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e363e;
 }
 
-.suggestions .find-icons{
-    border-bottom: none;
+.suggestions i {
+  display: grid;
+}
+
+.suggestions .find-icons {
+  border-bottom: none;
 }

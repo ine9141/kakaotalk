@@ -1,29 +1,52 @@
-.setting-main{
-    margin: 0px 20px;
+.margin {
+  margin-top: 86px;
+}
+.setting-main {
+  margin: 0px 20px;
 }
 
-.setting-menu{
-    margin-top: 50px;
+.setting-menu {
+  margin-top: 25px;
 }
 
-.setting-divider{
-    border-top: 1px solid rgba(0,0,0,0.1);
+.setting-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.setting-menu-components{
-    display: flex;
-    justify-content:space-between;
-    font-size: 22px;
-    font-weight: 600;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+.setting-menu-components {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 5fr 5fr;
+}
+.setting-menu-components:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+.setting-menu-components > span:last-child {
+  text-align: right;
+  opacity: 0.5;
 }
 
-.setting-menu-components span:last-child{
-    margin-left: auto;
+.setting-menu-components > div {
+  display: flex;
+  align-items: center;
 }
 
-.setting-menu-components > div:nth-child(3) > span{
-    opacity: 0.5;
+.new-badge {
+  margin-left: 10px;
+  display: flex;
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
 }

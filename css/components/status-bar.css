@@ -1,11 +1,13 @@
 .status-bar {
+  background-color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin: 5px 5px;
+  padding: 5px 5px;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -27,9 +29,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 10px;
 }
 
 .status-bar__column .fa-battery-full {
-  margin: 0px 5px;
+  padding: 0px 5px;
 }

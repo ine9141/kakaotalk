@@ -1,10 +1,15 @@
 .screen-header {
-  margin-top: 30px;
   display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0px;
+  left: 0px;
+  margin-top: 21px;
   justify-content: space-between;
   align-items: center;
   padding: var(--initial-margin);
-  position: relative;
 }
 
 .screen-header__title {
@@ -12,7 +17,10 @@
   font-weight: 600;
 }
 
-.screen-header__icons span{
+.screen-header__icons {
+  position: relative;
+}
+.screen-header__icons span {
   margin-left: 30px;
 }
 
@@ -23,22 +31,22 @@
   height: 5px;
   border-radius: 2.5px;
   position: absolute;
-  right: 15px;
-  top: 20px;
+  right: -4px;
+  top: -6px;
 }
 
-.recommended-friends{
-  color: rgba(0,0,0,0.3);
+.recommended-friends {
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 600;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
 }
 
-.recommended-friends h6{
+.recommended-friends h6 {
   padding: 15px 0px;
 }
 
-.recommended-friends span{
+.recommended-friends span {
   display: block;
   padding: 100px 0px;
   text-align: center;
