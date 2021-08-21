@@ -1,6 +1,6 @@
 .chat-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  height: 150vh;
 }
 
 .chat-screen .status-bar {
@@ -32,7 +32,7 @@
 
 .chat-receive {
   width: 100%;
-  margin-left: 20px;
+  margin-left: 40px;
   display: flex;
 }
 
@@ -94,4 +94,66 @@
   font-size: 18px;
   font-weight: 600;
   color: #2e363e;
+}
+
+.reply {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  background-color: white;
+  padding: 10px 10px;
+}
+
+.reply__column:first-child {
+  width: 10%;
+}
+
+.reply__column:last-child {
+  width: 90%;
+}
+
+.reply__text {
+  border-color: hsla(210, 15%, 21%, 0.2);
+  border-radius: 20px;
+  padding: 12px 0px;
+  padding-right: 80px;
+  padding-left: 20px;
+  width: 75%;
+  font-size: 20px;
+}
+
+.reply__column {
+  position: relative;
+}
+
+.reply__column > div > i,
+.reply__column > div > button {
+  border: none;
+  outline: none;
+  position: absolute;
+  opacity: 0.8;
+  bottom: 6px;
+  right: 3px;
+}
+
+.reply__column > div > i:first-child {
+  right: 45px;
+  bottom: 9px;
+}
+
+.reply__column > div > button {
+  background-color: var(--yellow);
+  color: black;
+  padding: 6px 6px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.reply__column:first-child {
+  margin-left: 10px;
+  opacity: 0.7;
 }
