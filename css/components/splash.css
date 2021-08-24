@@ -1,0 +1,23 @@
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: splash 0.3s ease-in-out 0.5s forwards;
+  box-sizing: border-box;
+}
+
+@keyframes splash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

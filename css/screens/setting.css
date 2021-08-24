@@ -23,6 +23,7 @@
   align-items: center;
   grid-template-columns: 1fr 5fr 5fr;
 }
+
 .setting-menu-components:last-child {
   border: none;
   margin-bottom: 0px;

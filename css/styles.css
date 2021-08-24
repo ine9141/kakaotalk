@@ -9,6 +9,7 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/alt-header.css";
+@import "components/splash.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -22,5 +23,6 @@
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 73px;
 }

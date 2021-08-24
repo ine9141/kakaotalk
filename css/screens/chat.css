@@ -1,6 +1,6 @@
 .chat-screen {
   background-color: #abc1d1;
-  height: 150vh;
+  height: 110vh;
 }
 
 .chat-screen .status-bar {
@@ -10,6 +10,7 @@
 .chat-screen .alt-header {
   background-color: #abc1d1;
 }
+
 .main-chat {
   display: flex;
   flex-direction: column;
@@ -17,7 +18,19 @@
   margin-top: 86px;
 }
 
+@keyframes slide-up2 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .timestamp {
+  will-change: transform;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +41,26 @@
   color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   margin-bottom: 20px;
+  animation: slide-up2 0.3s ease-in-out forwards;
+}
+
+@keyframes left-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .chat-receive {
   width: 100%;
   margin-left: 40px;
+  margin-bottom: 20px;
   display: flex;
+  animation: left-to-right 0.3s 0.1s ease-in-out forwards;
 }
 
 .chat-receive img {
@@ -76,12 +103,24 @@
   color: #2e363e;
 }
 
+@keyframes right-to-left {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .chat-send {
+  opacity: 0;
   justify-content: flex-end;
+  animation: right-to-left 0.3s 0.2s ease-in-out forwards;
 }
 .chat-send .chat-receive__bubble {
   flex-direction: row-reverse;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .chat-send .chat-receive__text {
@@ -108,6 +147,13 @@
   padding: 10px 10px;
 }
 
+@keyframes chaton {
+}
+
+.reply:hover {
+  animation: chaton 0.5s ease-in-out;
+}
+
 .reply__column:first-child {
   width: 10%;
 }
@@ -122,11 +168,9 @@
   padding: 12px 0px;
   padding-right: 80px;
   padding-left: 20px;
-  width: 75%;
+  width: 100%;
+  box-sizing: border-box;
   font-size: 20px;
-}
-
-.reply__column {
   position: relative;
 }
 
@@ -136,13 +180,13 @@
   outline: none;
   position: absolute;
   opacity: 0.8;
-  bottom: 6px;
-  right: 3px;
+  bottom: 16px;
+  right: 15px;
 }
 
 .reply__column > div > i:first-child {
-  right: 45px;
-  bottom: 9px;
+  right: 55px;
+  bottom: 20px;
 }
 
 .reply__column > div > button {
@@ -156,4 +200,25 @@
 .reply__column:first-child {
   margin-left: 10px;
   opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.reply,
+.reply__text {
+  will-change: transition;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply:focus-within {
+  transform: translateY(100px);
+}
+
+.reply:focus-within .reply__column .reply__text {
+  transform: translateX(-11%) translateY(-100px);
+  width: 112%;
+  display: flex;
+  justify-content: center;
 }
