@@ -10,6 +10,7 @@
   justify-content: center;
   animation: splash 0.3s ease-in-out 0.5s forwards;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 @keyframes splash {
